@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+//  --------------linear search function return index no of targeted element
+int linear_Search(int arr[], int target, int n){
+    int count  = 0;
+    for(int i = 0; i<n; i++){
+        if(arr[i] == target){
+            count = count+1;            
+        }
+    }
+    cout<<target<<" is present "<<count<<" times in given array."<<endl;
+return 0;
+}
+
+int main(){
+
+    cout<<"Enter n digits only"<<endl;
+    int n;
+    cin>>n;
+    int arr[n];
+
+    for(int i = 0; i<n ; i++){
+        cin>>arr[i];
+    }
+
+    for(int i = 0; i<n; i++){
+        cout<<arr[i]<<endl;                  // print array
+    }
+
+    
+    int target;
+    cin>>target;
+
+    linear_Search(arr,target,n);
+    // cout<<ans;
+    return 0;
+
+}
