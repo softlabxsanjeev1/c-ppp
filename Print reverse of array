@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+    // sizeof() operator returns that how namy memory will taken by var type
+    // in array we use this operator to find the no of ele in array when not declared
+
+    int arr[] = {2,4,56,7,8,4};  // initialization of array
+
+    cout<<"Size of array  = "<<sizeof(arr)<<endl;
+    cout<<"Size of int =  "<<sizeof(int)<<endl;
+    int n = sizeof(arr) / sizeof(int);
+
+    cout<<"No of elements in array = "<<n<<endl<<endl;
+
+    // print elements of array
+    for(int i = n-1; i>=0; i--){
+        cout<<i<<"  ->  "<<arr[i]<<endl;
+    }
+return 0;
+}
