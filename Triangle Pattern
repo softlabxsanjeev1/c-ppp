@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    for(int row = 1; row <= n; row++){
+        //-------------number-----------
+        cout<<row<<" ";
+
+        //------------zero------------
+        for(int i = 1; i <= row-2; i++){
+            cout<<"0"<<" ";
+        }
+
+        //------------number---------
+        if(row != 1){
+            cout<<row<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
+//output
+1 
+2 2 
+3 0 3 
+4 0 0 4 
+5 0 0 0 5 
+6 0 0 0 0 6 
+7 0 0 0 0 0 7 
