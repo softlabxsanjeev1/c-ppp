@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<" Enter no . "<<endl;
+    cin>>n;
+    int col = 2*n-1;
+// ------------------------------row----------
+   for(int row = 1; row <=n; row++){
+
+       //----------space--------------
+       for(int space = 1; space <= n-row; space++){
+           cout<<" "<<" ";
+       }
+
+       //---------increasing counting-------------
+       for(int j = row; j <= 2*row-1; j++){
+           cout<<j<<" ";
+       }
+
+       //-------------decreasing counting---------------
+       for(int dec = 2*row-2; dec >= row; dec--){
+           cout<<dec<<" ";
+       }
+       cout<<endl;
+   }
+return 0;
+}
+
+
+//output
+
+ Enter no . 
+        1 
+      2 3 2 
+    3 4 5 4 3 
+  4 5 6 7 6 5 4 
+5 6 7 8 9 8 7 6 5 
