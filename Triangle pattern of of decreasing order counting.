@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    for(int row=1;row<=n;row++){
+        // spaces
+   for(int i=1; i<=row-1; i++){
+       cout<<" "<<" ";
+       //  increasing
+       int inc=n-row+1;
+       for(int i=1; i<=(n-row+1); i++){
+           cout<<inc<<" ";
+           inc++;
+       }
+       // decreasing order
+       int dec = 2*n-2*row;
+       for(int i=1; i<=n-row;i++){
+           cout<<dec<<" ";
+           dec--;
+       }
+
+       for(int decr=(2*n-2*row);decr>=(n-row+1);decr--)
+           cout<<decr<<" ";
+       
+
+       cout<<endl;        //  end of one row
+   }
+}
+}
