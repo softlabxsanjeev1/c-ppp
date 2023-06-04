@@ -1,0 +1,9 @@
+#include <iostream>
+#include<climits>             // include this library file for MIN and MAX
+using namespace std;
+int main() {
+    cout<<LLONG_MAX<<endl;
+    cout<<INT_MAX<<endl;
+    cout<<INT_MIN<<endl;
+    return 0;
+}
