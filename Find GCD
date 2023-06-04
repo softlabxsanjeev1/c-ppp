@@ -1,0 +1,26 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+ void gCD(int a, int b){
+       int mini = min(a,b);            // min fun used to find minimum between a and b
+       cout<<"Smallest digit is = "<<mini<<endl;
+       int gcd = 1;
+       for(int i = 1; i < mini; i++){
+           if(a%i==0 && b%i==0){
+               gcd=i;
+           }
+       }
+       cout<<"Greatest common divisor is  = "<<gcd<<endl;
+       }
+
+int main() {
+    int a;
+    int b;
+    cin>>a >>b;
+    gCD(a,b);
+
+    return 0;
+  
+   }
+
