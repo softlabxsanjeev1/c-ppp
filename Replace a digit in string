@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int no;
+    cin>>no;
+    int rev_no=0;
+
+    while(no>0){
+        int reminder=no%10;
+        if(reminder==0){
+            reminder=5;  
+        }                                      //loop for replace no with 0
+        rev_no= (rev_no*10)+reminder ;           
+                                   
+        no = no/10;    
+    }  
+// cout<<rev_no<<endl;
+
+ // reverse changed no to get final result
+
+    int ans = 0;
+    while(rev_no>0){
+       int rem = rev_no % 10;
+        ans = (ans * 10) +rem;
+
+        rev_no = rev_no / 10;
+    }
+    cout<<ans<<endl;
+
+return 0;
+}
