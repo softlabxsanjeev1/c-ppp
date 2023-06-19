@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a=10;
+    int b=34;
+    cout<<"Absolute function 'abs(a-b)' turn negative value into positive"<<endl<<endl;
+    cout<<"Result abs(absolute function used) is  "<<abs(b-a)<<endl;
+    cout<<"without using abs function use  "<<a-b;
+}
