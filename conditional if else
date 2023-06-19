@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Conditional statement execution   if-else "<<endl<<endl;
+   int a, b;
+   cin>>a>>b;
+   if(a>b){
+       cout<<"if block will execute"<<endl<<"a is greater then b";
+       }else{
+           cout<<"Else block will execute."<<endl<<"b is grater";
+       }
+}
